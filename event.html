@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <button onclick="document.getElementById('demo').innerHTML=Date()">The Time is?</button>
+        <button onclick="this.innerHTML=Date()">The Time is?</button>
+    </body>
+</html> -->
+
+<!--With addEventListener-->
+<!-- <!DOCTYPE html>
+<html>
+    <body>
+        <button id="myBtn">Click me</button>
+        <p id="demo"></p>
+    </body>
+    <script>
+        const btn=document.getElementById("myBtn");
+        btn.addEventListener("click",function(){
+            document.getElementById("demo").innerHTML=Date();
+        })
+        //mouseover
+        btn.addEventListener("mouseover",function(){
+            document.getElementById("demo").innerHTML="Mouse is over me";
+        })
+        //mouseout
+        btn.addEventListener("mouseout",function(){
+            document.getElementById("demo").innerHTML="Mouse is out";
+        })
+    </script>
+</html> -->
+
+<!--key down-->
+<!DOCTYPE html>
+<html>
+    <body>
+<input type="text" id="k" placeholder="Press any key">
+<p id="demo"></p>
+</body>
+<script>
+    const k=document.getElementById("k");
+    k.addEventListener("keydown",function(event){
+        document.getElementById("demo").innerHTML="You pressed: "+event.key
+    })
+</script>
+</html> 
